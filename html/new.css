@@ -1,0 +1,12 @@
+body {
+    background-color: blueviolet;
+}
+
+h1{
+    color: aqua;
+}
+
+p {
+    color: crimson;
+    border: rgb(210, 225, 231);
+}
