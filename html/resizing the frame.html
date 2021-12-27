@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .left {
+          background-color: #6ef321;
+          padding: 20px;
+          float: left;
+          width: 60%; 
+        }
+        
+        .main {
+          background-color: #bb5656;
+          padding: 20px;
+          float: left;
+          width: 10%; 
+        }
+        
+        .center {
+          background-color: #8a7ac2;
+          padding: 20px;
+          float: center;
+          width: 10%; 
+        }
+        .right {
+          background-color: #d678a7;
+          padding: 20px;
+          float: right;
+          width: 10%; 
+        }
+ 
+        @media screen and (max-width: 800px) {
+          .left, .main, .center,.right  {
+            width: 100%; 
+          }
+        }
+       
+        </style>
+</head>
+<body>
+    <div class="left">
+  <h1>W3Schools Demo</h1> 
+  <p>Resize this responsive page!</p> 
+</div>
+
+
+  <div class="main">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom,
+    with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+
+  <div class="center">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+    <p>The Paris area is one of the largest population centers in Europe,
+    with more than 12 million inhabitants.</p>
+  </div>
+
+  <div class="right">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.</p>
+  </div>
+
+</body>
+</html>
