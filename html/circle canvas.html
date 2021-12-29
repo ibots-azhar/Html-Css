@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <canvas id="xyz" width="150" height="225" style="border: 2px solid red ;">Canvas Attributes</canvas> 
+
+        <script>
+        var c = document.getElementById("xyz");
+        var ctx =c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();    
+        </script>
+    
+    </body>
+</html>

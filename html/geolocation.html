@@ -1,0 +1,28 @@
+<html>
+<body>
+
+<h2>HTML Geolocation API</h2>
+
+<button onclick="getLocation()">Lets Try It..</button>
+
+<p id="xyz"></p>
+
+<script>
+var x = document.getElementById("xyz");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = " ";
+  }
+}
+    
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
