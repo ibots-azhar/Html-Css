@@ -1,0 +1,40 @@
+<html>
+<head>
+    <style>
+.abc
+{
+    margin-top:50px;
+    padding-left: 20px;
+}
+</style>
+<script>
+function clickCounter()
+ {
+  if (typeof(Storage) !== "xyz")
+   {
+    if (localStorage.clickcount)
+    {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else 
+    {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  }
+   else 
+  {
+    document.getElementById("result").innerHTML = " ";
+  }
+}
+</script>
+</head>
+<body>
+
+<p>
+   <div class="abc" > <button onclick="clickCounter()" type="button">Click me</button> </div>
+</p>
+<div id="result"></div>
+
+
+</body>
+</html>
