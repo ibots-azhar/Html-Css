@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links</title>
+    <style>
+        a:link, a:visited {
+          /* background-color: darkblue; */
+          color: rgb(12, 24, 192);
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration:wavy;
+          display:inline-flex;
+        }
+        
+        a:hover {
+background-color: chartreuse;
+color: ghostwhite;
+        }
+
+         a:active {
+          background-color: red;
+          color: gold;
+        }
+        </style>
+</head>
+<body>
+  
+   <marquee behaviour="scroll" direction="Right" onmouseover="this.stop()" onmouseout="this.start()" >
+     <a href="https://www.myntra.com/" target="_blank"><b>Myntra link..</b></a>
+     <a href="https://www.youtube.com/" target="_blank"><b>Youtube link..</b></a>
+    </marquee>
+</body>
+</html>

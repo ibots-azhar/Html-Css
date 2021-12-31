@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n-th child background color</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td {
+            text-align: left;
+            padding: 15px;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(214, 136, 136, 0.2);
+        }
+        /* tr:hover{
+            background-color: rgba(78, 190, 34, 0.4);
+        } */
+        th:hover{
+            background-color: rgba(51, 64, 189, 0.5);
+        }
+        td:hover{
+            background-color: rgba(190, 34, 99, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <h2>Border Table</h2>
+    <h3>n-th child background color</h3>
+    <table>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        <th>Savings</th>
+        </tr>
+        <tr>
+          <td>Robin</td>
+          <td>Son</td>
+          <td>2<i>k</i></td>
+        </tr>
+        <tr>
+          <td>Azhar</td>
+          <td>Deen</td>
+          <td>1<i>k</i></td>
+        </tr>
+        <tr>
+          <td>Adi</td>
+          <td>Boss</td>
+          <td>10<i>k</i></td>
+        </tr>
+        <tr>
+          <td>Rahul</td>
+          <td>Krish</td>
+          <td>3<i>k</i></td>
+        </tr>
+      </table>
+</body>
+</html>

@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
 <html>
     <!-- <style>
 ol{ 
@@ -22,19 +34,34 @@ ol{
             background-color: springgreen;
             /* color: purple; */
         }
+        ul.a{
+          list-style-position: inside;
+        }
+        li.b{
+          list-style:none;
+        }
+        .b:before{
+          content:''; 	display:inline-block; 
+          vertical-align: -webkit-baseline-middle;
+          	height:20px; 	width:20px; 
+            	background-image:url("Superbike.jpg");
+               	background-size:contain; 
+          	background-repeat:no-repeat; 
+
+        }
     </style>
 <body>
 
 <h2>Drinks</h2>
 
- <ul style="list-style-type:square;" >
-  <li>Coffee</li>
-  <li>Tea</li>
+ <ul class="a" style="list-style-type:square;" >
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
   <ul>
-  <li>Milk</li>
+  <li class="b" >Milk</li>
   <li>Fresh Juices</li>
 </ul>
-<li>Soda</li>
+<li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ul>   
 
 <h2>Drinks</h2>
@@ -42,10 +69,9 @@ ol{
 <ol
 type="i"
 >
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-  <li>Fresh Juices</li>
+<li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+<li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+<li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
 </ol> 
 
 <ol
