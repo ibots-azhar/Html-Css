@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CImage side by side using claer</title>
+    <style>
+        *{
+            box-sizing: border-box;
+         }
+         .img {
+          float: left;
+           width: 33%;
+           padding: 5px;
+         }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}  
+    </style>
+</head>
+<body>
+    <h2>Grid of Boxes: </h2>
+        <h3>Image side by side:</h3>
+    <div class="clearfix">
+        <div class="img" >
+        <img src="./images/performance01.jpg" style="width: 100%;">
+        </div>
+        <div class="img" >
+        <img src="./images/performance02.jpg" style="width: 100%;">
+        </div>
+        <div class="img" >
+        <img src="./images/Superbike.jpg" style="width: 100%;">
+        </div> 
+      </div>
+      
+      <p><strong>Note:</strong> The original supersport is back! Born of Yamaha’s racing DNA that shaped legends like M1, The R1 and the R-series, the all-new R15 powered with Dual Channel ABS is max powerhouse of 18.6 PS that brings track experience to the streets.</p>
+</body>
+</html>

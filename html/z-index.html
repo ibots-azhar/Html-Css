@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index </title>
+    <style>
+        .box {
+          position: relative;
+        }
+        
+        .xyz {
+          position: absolute;
+          z-index: 1;
+          background: tomato;
+          height: 100px;
+          /* margin: 30px; */
+          max-width: 50%;
+        }
+        
+        .pqr {
+          position: absolute;
+          z-index: 3;
+          background: thistle;
+          height: 60px;  
+          max-width: 50%;
+          left: 90px;
+          top: 35px;
+          text-align: center;
+          padding: 2px;
+        }
+        
+        .mno {
+          position: absolute;
+          z-index: 2;
+          background: lightgreen;
+          max-width: 35%;
+          left: 120px;
+          top: 20px;
+          height: 100px;
+        }
+        .gst{
+          position: absolute;
+          z-index: 4;
+          background-color: yellow;
+          max-width: 50%;
+          left: 40px;
+          top: 45px;
+          height: 70px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Z-index Example</h1>
+
+    <div class="box">
+        <div class="xyz">Example for z-index (xyz)</div>
+        <div class="pqr">Example for z-index (pqr)</div>
+        <div class="mno">Example for z-index (mno)</div>
+        <div class="gst">Example for z-index (gst)</div>
+      </div>
+      
+</body>
+</html>

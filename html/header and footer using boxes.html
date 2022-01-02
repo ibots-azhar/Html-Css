@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Header and Footer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .header,.footer {
+            background-color: skyblue;
+            color: floralwhite;
+            padding: 20px;
+            text-align: center;
+        }
+        .column {
+            float: left;
+            padding: 15px;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .menu {
+            width: 25%;
+
+        }
+        .content {
+            width: 75%;
+            background-color: gainsboro;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu li {
+            padding: 8px;
+            margin-bottom: 8px;
+            background-color:seagreen ;
+            color: floralwhite;
+        }
+        .menu li:hover{
+            background-color: indigo;
+        }
+        li a {
+            color: floralwhite;
+            text-decoration: none;
+        }
+        img
+        {
+            float: right;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Fun  :)</h1>
+      </div>
+      
+      <div class="clearfix">
+        <div class="column menu">
+           
+          <ul>
+            <li><a href=" ">The Flight</a></li>     
+            <li><a href=" ">The City</a></li>
+            <li><a href=" ">The Island</a></li>
+            <li><a href=" ">The Food</a></li>
+          </ul>
+        </div>
+      
+        <div class="column content">
+            <img src="./images/chania.jpg" width="150px" height="100px" >
+          <h1>The City</h1>
+          <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+          <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <p>Footer Text</p>
+      </div>
+</body>
+</html>
