@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity Hover</title>
+    <style>
+     img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+} 
+div {
+  background: rgb(175, 76, 170);
+  padding: 10px;
+  color:gold ;
+}
+
+div.first {
+  background: rgba(175, 76, 170, 0.1);
+}
+
+div.second {
+  background: rgba(175, 76, 170, 0.3);
+}
+
+div.third {
+  background: rgba(175, 76, 170, 0.6);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Image Transparency:</h1>
+    <img src="images/performance01.jpg" alt="engine" width="170" height="100"><br><br>
+<img src="images/performance02.jpg" alt="vva" width="170" height="100"><br><br>
+<img src="images/Superbike.jpg" alt="R15" width="170" height="100">
+
+<br><br><br><br>
+<div style="opacity:0.1;" ><p>iBots</p></div>
+<div style="opacity:0.3;"><p>iBots</p></div>
+<div style="opacity:0.6;"><p>iBots</p></div>
+<div><p>iBots</p></div>
+
+<br><br><br><br>
+
+<div class="first"><p>iBots</p></div>
+<div class="second"><p>iBots</p></div>
+<div class="third"><p>iBots</p></div>
+<div><p>iBots</p></div>
+
+</body>
+</html>

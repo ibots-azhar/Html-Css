@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Navigation bar</title>
+    <style>
+        body 
+        {
+            margin: 0;
+        }
+        
+        ul.nav 
+        {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: darkslategray;
+        }
+        
+        ul.nav li {float: left;}
+        
+        ul.nav li a 
+        {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        ul.nav li a:hover:not(.active) 
+        {
+            background-color: black;
+        }
+        
+        ul.nav li a.active 
+        {
+            background-color: darkseagreen;
+        }
+        
+        ul.nav li.right 
+        {
+            float: right;
+        }
+        
+        @media screen and (max-width: 600px) 
+        {
+          ul.nav li.right, 
+          ul.nav li {float: none;}
+        }
+        </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="right"><a href="#about">About</a></li>
+      </ul>
+      
+      <div style="padding:0 16px;">
+        <h1> Top Navigation Bar</h1>
+      <h3>Yamaha R15 Speed is Reborn</h3>
+        <p>The original supersport is back! Born of Yamaha's racing DNA that shaped legends like M1, The R1 and the R-series, the all-new R15 powered with Dual Channel ABS is max powerhouse of 18.6 PS that brings track experience to the streets.</p>
+        <h3>BS VI Compliant 155cc LC4V SOHC FI Engine</h3>
+        <p>This liquid cooled single overhead camshaft fuel injection engine churns out 18.6PS@10000rpm and 14.1Nm@8500rpm. Features an advanced die cast aluminum (DiASil) cylinder with outstanding cooling performance.</p>
+        <h3>Variable Valves Actuation (VVA)</h3>
+        <p>This is the first ever high-performance VVA system that provides torque for ease of use even at low RPM. There are two intake valve cams: one for low- to mid-range rpm and another for high rpm. They switch between each other at the 7,400 rpm mark to ensure good power and torque is present throughout the entire rev range.</p>
+      </div>
+</body>
+</html>
