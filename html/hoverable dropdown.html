@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable dropdown</title>
+    <style>
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-abc {
+          display: none;
+          position: absolute;
+          background-color: rgb(226, 205, 205);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(48, 70, 197, 0.61);
+          padding: 10px 12px;
+          z-index: 1;
+        }
+        
+        .dropdown:hover .dropdown-abc {
+          display: block;
+        }
+        </style>
+</head>
+<body>
+    <h2>Hoverable Dropdown:</h2>
+    <div class="dropdown">
+        <span>Mouse over me</span>
+        <div class="dropdown-abc">
+            <p style="color: tomato;"><em>Ibots Inc..!</em> </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligned Dropdown </title>
+    <style>
+        .drop {
+          background-color: rgb(26, 26, 219);
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-abc {
+          display: none;
+          position: absolute;
+          right: 0;
+          background-color:rgb(152, 152, 201);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 238, 255, 0.7);
+          z-index: 1;
+        }
+        
+        .dropdown-abc a {
+          color: floralwhite;
+          padding: 8px 12px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-abc a:hover {background-color:rgba(160, 57, 57, 0.534);}
+        
+        .dropdown:hover .dropdown-abc {
+          display: block;
+        }
+        
+        .dropdown:hover .drop {
+          background-color:darkolivegreen;
+        }
+        </style>
+</head>
+<body>
+    <h2>Aligned Dropdown </h2>
+    <div class="dropdown" style="float:left;">
+        <button class="drop">Left</button>
+        <div class="dropdown-abc" style="left:0;">
+        <a href="#">Ice cream</a>
+        <a href="#">cool Drink</a>
+        <a href="#">Milk Shakes</a>
+        </div>
+      </div>
+      
+      <div class="dropdown" style="float:right;">
+        <button class="drop">Right</button>
+        <div class="dropdown-abc">
+        <a href="#">Ice cream</a>
+        <a href="#">Cool Drink</a>
+        <a href="#">Milk Shakes</a>
+        </div>
+      </div>
+</body>
+</html>
