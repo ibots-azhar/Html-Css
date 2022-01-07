@@ -1,0 +1,18 @@
+{
+   "style_name": "image",
+   "images": [
+      "..\\image sprite.html",
+      "..\\images\\home icon.png",
+      "..\\images\\left arrow.png",
+      "..\\images\\right arrow.png"
+   ],
+   "orientation": "horizontal",
+   "padding": 10,
+   "custom_styles": {
+      "display": "inline-block"
+   },
+   "stylesheet": "scss",
+   "path_prefix": "",
+   "output": "png",
+   "enable_cache_busting": true
+}

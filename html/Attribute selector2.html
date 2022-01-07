@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selector 2</title>
+    <style>
+    [class^="r15"] 
+    {
+    background:lightgray ;
+    }
+
+    [class$="test"] 
+    {
+    background: yellow;
+    }
+</style>
+</head>
+<body>
+
+    <h2>Attribute^="value" Selector:</h2>
+<div class="performance_of_bike">The performance_of_bike.</div>
+<div class="r15">R15 V3.o </div>
+<div class="VVA-bike-performance">The VVA-bike-performance.</div>
+<p class="r15-rosy">This is Rosy bike.</p>
+<br>
+<br>
+<br>
+     <h2>Attribute$="value" Selector:</h2> 
+     <div class="first_test">The first element.</div>
+     <div class="second">The second  element.</div>
+     <div class="my-test">The third  element.</div>
+     <p class="mytest">some text </p>
+</body>
+</html>
