@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input field inside icon</title>
+    <style> 
+        input[type=text]
+        {
+          width: 150px;
+          box-sizing: border-box;
+          border: 2px solid rgb(255, 0, 0);
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white;
+          background-image: url('./html/images/search\ icon.png');
+          background-position: 10px 10px; 
+          background-repeat: no-repeat;
+          padding: 12px 20px 12px 60px;
+          transition: width 0.8s ease-in-out;
+        }
+        input[type=text]:focus 
+        {
+          width: 100%;
+        }
+        input[type=text]:hover
+        {
+            box-shadow:0px 10px 20px 0px palegreen;
+        }
+        </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="search" placeholder="Search...">
+        <!-- <marquee behaviour="scroll" direction="right" onmouseover="this.stop();" onmouseout="this.start();" > </marquee> -->
+    </form>
+</body>
+</html>
