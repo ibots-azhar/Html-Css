@@ -15,13 +15,13 @@
         {
           font-family: Arial;
           padding: 10px;
-          background: rgb(241, 241, 241);
+          background: rgb(214, 195, 195);
         }
         
         .header {
           padding: 30px;
           text-align: center;
-          background: white;
+          background: rgb(68, 192, 151);
         }
         
         .header h1 {
@@ -30,7 +30,10 @@
         
         .topnav {
           overflow: hidden;
-          background-color: rgb(51, 51, 51);
+          background-color: rgb(57, 69, 133);
+        }
+        .topnav:hover {
+          box-shadow: 10px 15px 20px 10px powderblue;
         }
         
         .topnav a {
@@ -38,13 +41,14 @@
           display: block;
           color: rgb(242, 242, 242);
           text-align: center;
-          padding: 14px 16px;
+          padding: 15px 15px;
           text-decoration: none;
         }
         
         .topnav a:hover {
           background-color: rgb(221, 221, 221);
           color: black;
+          box-shadow: 0px 15px 20px 0px powderblue;
         }
         
         .leftcolumn {   
@@ -60,9 +64,11 @@
         }
         
         .fakeimg {
-          background-color: rgb(170, 170, 170);
+         
+          background-color: rgba(78, 171, 184, 0.5);
           width: 100%;
           padding: 20px;
+          
         }
         
         .card {
@@ -70,7 +76,16 @@
           padding: 20px;
           margin-top: 20px;
         }
-        
+        .card:hover {
+          box-shadow: 10px 15px 20px 10px paleturquoise;
+        }
+        #edits {
+          color: floralwhite;
+          font-size: 25px;
+          font-weight: bold;
+          padding-left: 25px;
+          padding-top: 18px;
+        }        
 
         .row:after {
           content: "";
@@ -81,7 +96,7 @@
         .footer {
           padding: 20px;
           text-align: center;
-          background: rgb(221, 221, 221);
+          background: rgb(68, 192, 151);
           margin-top: 20px;
         }
         
@@ -106,50 +121,57 @@
        </div>
       
       <div class="topnav">
-        <a href=" ">Link</a>
-        <a href=" ">Link</a>
-        <a href=" ">Link</a>
-        <a href=" " style="float:right">Link</a>
+        <a href=" ">Home</a>
+        <a href=" ">News</a>
+        <a href=" ">Jobs</a>
+        <a href=" " style="float:right">Contacts</a>
       </div>
       
       <div class="row">
         <div class="leftcolumn">
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <div class="card" style="background-color: hsla(55, 43%, 63%, 0.8);" >
+            <h2 style="background-color: darkcyan; color: floralwhite; padding: 10px; " > CHANIA ISLAND</h2>
+            <h5>Chania Crete, Jan 11, 2022</h5>
+            <div class="fakeimg" style="height:250px;" >
+            <img src="./images/chania.jpg" alt="Chania" width="100%" height="212px">
+            </div>
+            <h4>Short Notes:</h4>
+            <p>Chania is one of the four regional units of Crete; it covers the westernmost quarter of the island. Its capital is the city of Chania. Chania borders only one other regional unit: that of Rethymno to the east. The western part of Crete is bounded to the north by the Cretan Sea, and to the west and south by the Mediterranean Sea. The regional unit also includes the southernmost island of Europe, Gavdos.</p>
           </div>
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <div class="card" style="background-color: hsla(55, 43%, 63%, 0.8);" >
+            <h2 style="background-color: darkcyan; color: floralwhite; padding: 10px; ">GAVDOS</h2>
+            <h5>Gavdos, Jan 11, 2022</h5>
+            <div class="fakeimg" style="height:250px;">
+              <img src="./images/gavdos.jpg" alt="Gavdos" width="100%" height="212px">
+            </div>
+            <h4>Short Notes:</h4>
+            <p>Gavdos is the southernmost Greek island, located to the south of its much larger neighbour, Crete, of which it is administratively a part, in the regional unit of Chania. It forms a community with surrounding islets and was part of the former Selino Province. The island is situated at the southern tip of Greece; it is the southernmost point of Europe.</p>
           </div>
         </div>
         <div class="rightcolumn">
-          <div class="card">
+          <div class="card" style="background-color: hsla(120, 53%, 63%, 0.8);" >
             <h2>About Me</h2>
-            <div class="fakeimg" style="height:100px;">Image</div>
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            <div class="fakeimg" style="height:100px;">
+              <div id="edits">Ibots Inc..</div>
+              </div>
+            <p>Innovation in new technologies and new ideas</p>
           </div>
-          <div class="card">
+          <div class="card" style="background-color: hsla(337, 53%, 63%, 0.8);" >
             <h3>Popular Post</h3>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
-            <div class="fakeimg"><p>Image</p></div>
+            <div class="fakeimg"><p id="edits" >Frontend Developing</p></div>
+            <div class="fakeimg"><p id="edits" >Backend Developing</p></div>
+            <div class="fakeimg"><p id="edits" >Full Stack Developing</p></div>
           </div>
-          <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
+          <div class="card" style="background-color: hsla(182, 56%, 70%, 0.8);" >
+            <h3 id="edits">Connecting with Innovation</h3>
+            <p style="color: honeydew; padding-left: 55px; " >Create new a world... </p>
           </div>
         </div>
       </div>
       
       <div class="footer">
-        <h2>Footer</h2>
+        <h2 style="font-size: 35px; color: floralwhite; " >Ibots Inc..
+      <p style="text-align: center; font-size: 10px;color: black; " >@copyrights</p></h2>
       </div>
 </body>
 </html>
