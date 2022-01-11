@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header,Footer, Column</title>
+    <style>
+        * 
+        {
+          box-sizing: border-box;
+        }
+        
+        body 
+        {
+          margin: 0;
+        }
+        
+        
+        .header 
+        {
+          background-color: rgb(226, 205, 14);
+          padding: 20px;
+          text-align: center;
+          color: floralwhite;
+        }
+        
+        
+        .topnav 
+        {
+          overflow: hidden;
+          background-color: rgb(38, 151, 23);
+        }
+        
+       
+        .topnav a 
+        {
+          float: left;
+          display: block;
+          color: rgb(242, 242, 242);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+       
+        .topnav a:hover 
+        {
+          background-color: rgb(209, 176, 176);
+          color: black;
+        }
+        
+        
+        .column 
+        {
+          float: left;
+          width: 33.33%;
+
+          padding: 15px;
+        }
+/*         
+        .column.side 
+        {
+            width: 25%;
+        }
+        .column.middle 
+        {
+            width: 50%;
+        } */
+       
+        .row:after 
+        {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        
+        @media screen and (max-width:600px) 
+        {
+          .column 
+          {
+            width: 100%;
+          }
+        }
+
+        .footer 
+        {
+           background-color: rgb(226, 205, 14);
+           padding: 10px;
+           text-align: center;
+           color: floralwhite;
+        }
+        </style>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Yamaha R15</h1> </div>
+      
+        <div class="topnav">
+            <a href=" ">BS VI Engine</a>
+            <a href=" ">VVA</a>
+            <a href=" ">6 Speed</a>
+          </div>
+         
+          <div class="row">
+            <div class="column" style="background-color: gray;" >
+            <h2>BS VI Compliant 155cc LC4V SOHC FI Engine :</h2> 
+            <p>This liquid cooled single overhead camshaft fuel injection engine churns out 18.6PS@10000rpm and 14.1Nm@8500rpm. Features an advanced die cast aluminum (DiASil) cylinder with outstanding cooling performance.</p>   
+            </div>
+
+            <div class="column" style="background-color:indianred;" >
+            <h2>Variable Valves Actuation (VVA) :</h2>
+            <p>This is the first ever high-performance VVA system that provides torque for ease of use even at low RPM. There are two intake valve cams: one for low- to mid-range rpm and another for high rpm. They switch between each other at the 7,400 rpm mark to ensure good power and torque is present throughout the entire rev range.</p>    
+            </div>
+
+            <div class="column" style="background-color:mediumaquamarine;" >
+            <h2>6 Speed Transmission :</h2>
+            <p>Now shift gears without worrying about economy. The new R15 with 6-speed transmission allows to cruise at low RPM even in higher gears, thus saving fuel without missing on the thrill.</p>    
+            </div>
+            </div>
+            <div class="footer" >
+            <p>Yamaha Revs Your Heart</p>    
+            </div>
+</body>
+</html>
