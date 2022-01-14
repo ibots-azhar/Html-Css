@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS const color</title>
+</head>
+<body>
+    <p id="kingmaker"></p>
+    <p id="queen"></p>
+    <p id="marvel"></p>
+    <p id="dream"></p>
+
+
+
+<script>
+const car = {type:"Ford", model:"Mastung GT-500", color:"white"};
+
+car.color = "Black";
+
+car.owner = "Azhar";
+
+document.getElementById("kingmaker").innerHTML = "Car owner is " + car.owner; 
+document.getElementById("queen").innerHTML = "Car brand is " + car.type; 
+document.getElementById("dream").innerHTML = "Car model is " + car.model; 
+document.getElementById("marvel").innerHTML = "Car color is " + car.color; 
+
+</script>
+
+</body>
+</html>
